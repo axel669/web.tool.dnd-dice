@@ -13,5 +13,6 @@ export default {
                 ...list.slice(0, 99)
             ]
         }
-    )
+    ),
+    clear: () => source.set([])
 }

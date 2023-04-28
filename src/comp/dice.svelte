@@ -1,29 +1,31 @@
 <script>
     import {
         Button,
+        Flex,
         Modal,
+        Text,
         handler$,
     } from "@axel669/zephyr"
 
-    import rand from "$/rand.mjs"
+    import rand from "$/rand"
     import rolls from "$rolls"
+    import roll from "$/roll"
 
-    export let sides
+    export let info
 
     let value = 0
-    const roll = handler$(
-        () => {
-            const value = rand(sides)
-            rolls.add({
-                name: `d${sides}`,
-                dice: `d${sides}`,
-                values: value.toString(),
-                total: value,
-            })
-        }
+    const rollem = handler$(
+        () => rolls.add({
+            name: info.name,
+            dice: info.dice,
+            ...roll(info.dice),
+        })
     )
 </script>
 
-<Button variant="outline" color="primary" on:click={roll()}>
-    d{sides}
+<Button variant="outline" color="primary" on:click={rollem()}>
+    <Flex cross="center" main="center">
+        <Text>{info.name}</Text>
+        <Text subtitle>{info.dice}</Text>
+    </Flex>
 </Button>

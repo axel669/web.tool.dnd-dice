@@ -21,6 +21,7 @@ export default {
         $path({
             root: "src",
             paths: {
+                $dice: "src/state/dice.mjs",
                 $rolls: "src/state/rolls.mjs",
             },
         }),

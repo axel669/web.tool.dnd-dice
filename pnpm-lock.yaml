@@ -4,8 +4,8 @@ specifiers:
   '@axel669/rollup-copy-static': ^0.1.2
   '@axel669/rollup-dollar-path': ^0.1.0
   '@axel669/rollup-html-input': ^0.1.2
-  '@axel669/windstorm': 0.1.11
-  '@axel669/zephyr': ^*
+  '@axel669/zephyr': ^0.1.2
+  '@labyrinthos/asuid': ^0.2.0
   '@rollup/plugin-commonjs': ^24.1.0
   '@rollup/plugin-node-resolve': ^15.0.2
   rollup: ^3.21.0
@@ -17,8 +17,8 @@ dependencies:
   '@axel669/rollup-copy-static': 0.1.2
   '@axel669/rollup-dollar-path': 0.1.0
   '@axel669/rollup-html-input': 0.1.2
-  '@axel669/windstorm': 0.1.11
-  '@axel669/zephyr': 0.1.1_svelte@3.58.0
+  '@axel669/zephyr': 0.1.2
+  '@labyrinthos/asuid': 0.2.0
   '@rollup/plugin-commonjs': 24.1.0_rollup@3.21.0
   '@rollup/plugin-node-resolve': 15.0.2_rollup@3.21.0
   rollup: 3.21.0
@@ -52,16 +52,14 @@ packages:
       node-html-parser: 5.4.2
     dev: false
 
-  /@axel669/windstorm/0.1.11:
-    resolution: {integrity: sha512-KlkvHyqYwNobv5H+TYNLQMzUNIOyoPvwosObAERExPwagaV3aFCYN/n6iXL1SBkUnZ0NgIvxO8G1vkH1E6Mf3Q==}
+  /@axel669/windstorm/0.1.12:
+    resolution: {integrity: sha512-ct0syAzpwxYehL8q+Bmf6TfNPvgIVotwoidP62/O/7BPN+JR0x4nOQNdctT59FGQc9Od0/SmlU+9/CWDE0CvfQ==}
     dev: false
 
-  /@axel669/zephyr/0.1.1_svelte@3.58.0:
-    resolution: {integrity: sha512-4LKjhmFJbLlEyR+NBVrd8VHv2yr2TFqKnstEsNcrmyEJTbUISGl2emPYXQaONek/8MUgvIAOndc0K+l5sqBBlw==}
-    peerDependencies:
-      svelte: ^3.58.0
+  /@axel669/zephyr/0.1.2:
+    resolution: {integrity: sha512-G+aPNX5aq0IDPyonzOOp0AcnPESn5c6DR4Nq9MjZCU+8y/k/+B8lxMC6Z/T/b1KoivkJSDzPVOc4tpIfgkhXqQ==}
     dependencies:
-      '@axel669/windstorm': 0.1.11
+      '@axel669/windstorm': 0.1.12
       '@labyrinthos/asuid': 0.2.0
       svelte: 3.58.0
     dev: false
